@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 15px;
+    background: #87CEEB;
+  }
+  h2 {color:#000000;
+    font-family: "Bungee Inline", sans-serif;}
+  /* Header/Blog Title */
+  .header {
+    padding: 15px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  h3 {color: #000000;
+    font-family: "Bungee Inline", sans-serif;}
+
+  .header h1 {
+    font-size: 75px;
+    color: #000000;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  p{color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff ;
+    border-radius: 20px;
+    font-family: "Bungee Inline";
+  }
+  
+  /* Style the topnav links */
+  
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavrosp a:hover {
+    background-color: #e623dc;
+    color: #000000;
+  }
+
+  .topnavybss a:hover {
+    background-color: #fffb27;
+    color: #000000;
+  }
+
+  .topnavmago a:hover {
+    background-color: #c9ca8e;
+    color: #000000;
+  }
+
+  .topnavln a:hover {
+    background-color: #1fa763;
+    color: #000000;
+  }
+
+  .topnavhome a:hover {background-color: #35b6d6;
+    color: #000000;}
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .homecolumn {   
+    float: left;
+    width: 100%;
+  }
+
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #F0EAD2;
+    padding-left: 15px;
+    
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 19%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  td, th { border: 5px solid #F0EAD2; font-size: 25px; color: #6C584C; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  table { border: 5px solid #6C584C; background-color: #ADC178;  margin-left: auto;
+    margin-right: auto; border-radius: 8px;}
+    h5 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #6C584C;}
+
+    /*.mainimages {border-radius: 15px;}*/
+    img {border-radius: 15%;}
+    .headerimgl {float: left;}
+    .headerimgr {float: right;
+      -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    }
+
+
+
+    @media print {
+      body {-webkit-print-color-adjust: exact;}
+      }
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      
+      body{
+          background: linear-gradient(90deg,rgb(24, 86, 168),#022a3c) fixed;
+          padding:50px;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 400;
+      }
+      
+      .card-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          flex-wrap: wrap;
+          padding:20px;
+      }
+      
+      .card{
+          width:auto;
+          height: auto;
+          position: relative;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 14px;
+          padding: 20px;
+          transition: all .3s ease-in;
+      }
+
+
+
+      .card > *{
+          padding: 10px;
+      }
+      .card .card-image{
+          height: 300px;
+          width: 300px;
+          border: 5px double #022a3c;
+          border-radius: 50%;
+          background-position: center center;
+          background-size: cover;    
+      }
+      .card .card-title{
+          padding: 20px 10px;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          text-shadow: 1px 0px 2px #262654;
+          font-family: Bungee Inline;
+          text-align: center;
+          a {
+           color: #000000;
+           text-decoration: none;
+          }
+      }
+      .card:nth-child(1) .card-image{
+          background-image: url(images/spoonbillhome.jpg);
+      }
+      .card:nth-child(2) .card-image{
+          background-image: url(images/sapsuckerhome.jpg);
+      }
+      .card:nth-child(3) .card-image{
+          background-image: url(images/godwithome.jpg);
+      }
+      .cardrosp:hover{
+          background: #e623dc;
+          color: #fff;
+          box-shadow: 0px 0px 11px 5px #000000;
+      
+      }
+
+      .cardybss:hover{
+        background: #fffb27;
+        color: #fff;
+        box-shadow: 0px 0px 11px 5px #000000;
+    
+    }
+
+    .cardmago:hover{
+      background: #c9ca8e;
+      color: #fff;
+      box-shadow: 0px 0px 11px 5px #000000;
+  
+  }
+
+  
+    /*Maybe Delete this*/
+      .card1 .card1-text{
+          line-height: 20px;
+          font-size: 400;
+      }
+      .card1 {
+        background-color: #ffffff;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 19%;
+      }
+      .card1-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding:20px;
+    }
+    
+    .card1{
+        width:40%;
+        height: 50%;
+        position: relative;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        padding: 20px;
+        transition: all .3s ease-in;
+    }
+
+      
+
+
+      .card1 > *{
+        padding: 10px;
+    }
+    .card1 .card1-image{
+        height: 300px;
+        width: 300px;
+        border: 5px double #022a3c;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;    
+    }
+    .card1 .card1-title{
+        padding: 20px 10px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-shadow: 1px 0px 2px #262654;
+        font-family: Bungee Inline;
+        text-align: center;
+        a {
+         color: #000000;
+         text-decoration: none;
+        }
+    }
+    .card1:nth-child(1) .card1-image{
+        background-image: url(images/spoonbill1.jpg);
+    }
+    .card1:nth-child(2) .card1-image{
+        background-image: url(images/rospnest.jpg);
+    }
+    .card1:nth-child(3) .card1-image{
+        background-image: url(images/rospmap.jpg);
+    }
+    
+
+
+     /*Maybe Delete this 2*/
+     .card2 .card2-text{
+      line-height: 20px;
+      font-size: 400;
+  }
+  .card2 {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 19%;
+  }
+  .card2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.card2{
+  width:40%;
+  height: 50%;
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    padding: 20px;
+    transition: all .3s ease-in;
+}
+
+  header, footer {background-color: #37b2e2;
+  text-align: center;
+  
+  padding: 15px;
+  text-align: center;
+  margin-top:0px;
+  border-radius: 20px;}
+
+
+  .card2 > *{
+    padding: 10px;
+}
+.card2 .card2-image{
+    height: 300px;
+    width: 300px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card2 .card2-title{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #262654;
+    font-family: Bungee Inline;
+    text-align: center;
+    a {
+     color: #000000;
+     text-decoration: none;
+    }
+}
+.card2:nth-child(1) .card2-image{
+    background-image: url(images/sapsucker.jpg);
+}
+.card2:nth-child(2) .card2-image{
+    background-image: url(images/ybssnest1.jpg);
+}
+.card2:nth-child(3) .card2-image{
+    background-image: url(images/ybssmap.jpg);
+}
+
+/*Maybe Delete this 2*/
+.card3 .card3-text{
+  line-height: 20px;
+  font-size: 400;
+}
+.card3 {
+background-color: #ffffff;
+padding: 15px;
+margin-top: 20px;
+border-radius: 19%;
+}
+.card3-container{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+padding:20px;
+}
+
+.card3{
+  width:40%;
+  height: 50%;
+position: relative;
+background: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 14px;
+padding: 20px;
+transition: all .3s ease-in;
+}
+
+
+
+
+.card3 > *{
+padding: 10px;
+}
+.card3 .card3-image{
+height: 300px;
+width: 300px;
+border: 5px double #022a3c;
+border-radius: 50%;
+background-position: center center;
+background-size: cover;    
+}
+.card3 .card3-title{
+padding: 20px 10px;
+font-size: 1.5rem;
+text-transform: uppercase;
+text-shadow: 1px 0px 2px #262654;
+font-family: Bungee Inline;
+text-align: center;
+a {
+ color: #000000;
+ text-decoration: none;
+}
+}
+.card3:nth-child(1) .card3-image{
+background-image: url(images/godwit.jpg);
+}
+.card3:nth-child(2) .card3-image{
+background-image: url(images/magonest.png);
+}
+.card3:nth-child(3) .card3-image{
+background-image: url(images/magomap.jpg);
+}
